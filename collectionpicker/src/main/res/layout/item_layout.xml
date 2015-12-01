@@ -16,10 +16,4 @@
         android:singleLine="true"
         android:text="Text 1" />
 
-    <ImageView
-        android:id="@+id/item_icon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:gravity="center" />
-
 </LinearLayout>

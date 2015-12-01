@@ -168,8 +168,8 @@ public class CollectionPicker extends LinearLayout {
                         } else {
                             itemLayout.setBackgroundDrawable(getSelector(item));
                         }
-                        ImageView iconView = (ImageView) itemLayout.findViewById(R.id.item_icon);
-                        iconView.setBackgroundResource(getItemIcon(item.isSelected));
+//                        ImageView iconView = (ImageView) itemLayout.findViewById(R.id.item_icon);
+//                        iconView.setBackgroundResource(getItemIcon(item.isSelected));
                         if (mClickListener != null) {
                             mClickListener.onClick(item, position);
                         }
@@ -187,13 +187,13 @@ public class CollectionPicker extends LinearLayout {
                     + textPaddingRight;
 
             // if (!simplifiedTags) {
-            ImageView indicatorView = (ImageView) itemLayout.findViewById(R.id.item_icon);
-            indicatorView.setBackgroundResource(getItemIcon(item.isSelected));
-            indicatorView.setPadding(0, textPaddingTop, textPaddingRight, texPaddingBottom);
-
-            if (simplifiedTags) {
-                indicatorView.setVisibility(View.GONE);
-            }
+//            ImageView indicatorView = (ImageView) itemLayout.findViewById(R.id.item_icon);
+//            indicatorView.setBackgroundResource(getItemIcon(item.isSelected));
+//            indicatorView.setPadding(0, textPaddingTop, textPaddingRight, texPaddingBottom);
+//
+//            if (simplifiedTags) {
+//                indicatorView.setVisibility(View.GONE);
+//            }
 
             itemWidth += Utils.dpToPx(getContext(), 30) + textPaddingLeft
                     + textPaddingRight;
