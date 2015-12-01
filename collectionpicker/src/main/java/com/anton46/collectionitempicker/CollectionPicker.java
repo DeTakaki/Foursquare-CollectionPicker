@@ -87,14 +87,14 @@ public class CollectionPicker extends LinearLayout {
                 mCancelIcon);
         this.mLayoutBackgroundColorNormal = typeArray.getColor(
                 R.styleable.CollectionPicker_cp_itemBackgroundNormal,
-                mLayoutBackgroundColorNormal);
+                getContext().getResources().getColor(R.color.blue));
         this.mLayoutBackgroundColorPressed = typeArray.getColor(
                 R.styleable.CollectionPicker_cp_itemBackgroundPressed,
-                mLayoutBackgroundColorPressed);
+                getContext().getResources().getColor(R.color.red));
         this.mRadius = (int) typeArray
                 .getDimension(R.styleable.CollectionPicker_cp_itemRadius, mRadius);
         this.mTextColor = typeArray
-                .getColor(R.styleable.CollectionPicker_cp_itemTextColor, mTextColor);
+                .getColor(R.styleable.CollectionPicker_cp_itemTextColor, getContext().getResources().getColor(android.R.color.white));
         this.simplifiedTags = typeArray
                 .getBoolean(R.styleable.CollectionPicker_cp_simplified, false);
         typeArray.recycle();
@@ -181,7 +181,7 @@ public class CollectionPicker extends LinearLayout {
             itemTextView.setText(item.text);
             itemTextView.setPadding(textPaddingLeft, textPaddingTop, textPaddingRight,
                     texPaddingBottom);
-            itemTextView.setTextColor(getResources().getColor(mTextColor));
+            itemTextView.setTextColor(getResources().getColor(android.R.color.white));
 
             float itemWidth = itemTextView.getPaint().measureText(item.text) + textPaddingLeft
                     + textPaddingRight;
